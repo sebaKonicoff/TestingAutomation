@@ -90,12 +90,12 @@ public void resultado()
 public void TestDespegar() throws Exception {
 	definirWebElement();
 	alojamiento.click();
-	WebElement destino = driver.findElement(By.xpath("//*[@class='input-container']//*[@type='text'][@placeholder='Ingres· una ciudad, alojamiento o punto de interÈs']"));
+	WebElement destino = driver.findElement(By.xpath("//*[@class='input-container']//*[@type='text'][@placeholder='Ingres√° una ciudad, alojamiento o punto de inter√©s']"));
 	//driver.manage().window().maximize();
 	//sirve para maximizar el chrome
 	wait.until(ExpectedConditions.elementToBeClickable(destino));
 	destino.click();
-	destino.sendKeys("CÛrdoba");
+	destino.sendKeys("C√≥rdoba");
 	Thread.sleep(1000);
 	destino.sendKeys(Keys.CONTROL);
 	Thread.sleep(1000);
