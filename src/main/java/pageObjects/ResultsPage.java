@@ -13,9 +13,11 @@ public class ResultsPage {
 	private WebDriver driver = null;
 	//public WebDriverWait wait = new WebDriverWait(driver,5);
 	
-	@FindBy(xpath="//*[@index='0']//*[@class='eva-3-cluster-gallery -eva-3-bc-white -eva-3-shadow-line-hover']")
+	@FindBy(xpath="//*[@class='eva-3-results-list -banner-top']//*[@class='results-wrapper -eva-3-mt-xlg']")
 	WebElement resultadoBusqueda;
-	
+	//*[@class='eva-3-results-list -banner-top']//*[@index='0']
+	//*[@index='0']//*[@class='eva-3-cluster-gallery -eva-3-bc-white -eva-3-shadow-line-hover']
+	//*[@class='eva-3-results-list -banner-top']//*[@class='results-wrapper -eva-3-mt-xlg']
 	public ResultsPage(WebDriver driver)
 	{
 		this.driver = driver;
