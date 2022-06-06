@@ -1,6 +1,5 @@
 package pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,10 +7,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
 
 public class DespegarAlojamientosPage {
 	private WebDriver driver = null;
-	//public WebDriverWait wait = new WebDriverWait(driver,5);
+	WebDriverWait wait = null;
 	
 	@FindBy(xpath="//*[@class='input-container']//*[@type='text'][@placeholder='Ingresá una ciudad, alojamiento o punto de interés']")
 	WebElement destino;
@@ -42,58 +42,56 @@ public class DespegarAlojamientosPage {
 	{
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		this.wait = new WebDriverWait(driver,5);
 	}
 	
 	public void ingresarCiudadDestino(String ciudad) throws InterruptedException
 	{
 		
-		//wait.until(ExpectedConditions.elementToBeClickable(destino));
+		wait.until(ExpectedConditions.elementToBeClickable(destino));
 		destino.click();
 		destino.sendKeys(ciudad);
 		Thread.sleep(1000);
 		destino.sendKeys(Keys.CONTROL);
-		Thread.sleep(1000);
-		//wait.until(ExpectedConditions.elementToBeClickable(primerCiudad));
-		Thread.sleep(1000);
+		wait.until(ExpectedConditions.elementToBeClickable(primerCiudad));
+		//Thread.sleep(1000);
 		destino.sendKeys(Keys.ENTER);
 	}
 	
 	public void ingresarFechaIngreso() throws InterruptedException
 	{
-		//wait.until(ExpectedConditions.elementToBeClickable(calendarioIngreso));
+		wait.until(ExpectedConditions.elementToBeClickable(calendarioIngreso));
 		calendarioIngreso.click();
-		Thread.sleep(100);
-		//wait.until(ExpectedConditions.elementToBeClickable(fechaIngreso));
+		//Thread.sleep(100);
+		wait.until(ExpectedConditions.elementToBeClickable(fechaIngreso));
 		fechaIngreso.click();
 	}
 	
 	public void ingresarFechaSalida() throws InterruptedException
 	{
-		//wait.until(ExpectedConditions.elementToBeClickable(calendarioIngreso));
+		wait.until(ExpectedConditions.elementToBeClickable(calendarioIngreso));
 		calendarioSalida.click();
-		Thread.sleep(100);
+		//Thread.sleep(100);
 		fechaSalida.click();
 	}
 	
 	public void seleccionarPasajero() throws InterruptedException
 	{
-		//wait.until(ExpectedConditions.elementToBeClickable(habitacion));
+		wait.until(ExpectedConditions.elementToBeClickable(habitacion));
 		habitacion.click();
 		Thread.sleep(100);
-		//wait.until(ExpectedConditions.elementToBeClickable(botonMasAdulto));
+		wait.until(ExpectedConditions.elementToBeClickable(botonMasAdulto));
 		botonMasAdulto.click();
 		Thread.sleep(100);
 		//busqueda para seleccionar un menor.
-		habitacion.click();
-		Thread.sleep(100);
-		//wait.until(ExpectedConditions.elementToBeClickable(botonMasMenor));
+		wait.until(ExpectedConditions.elementToBeClickable(botonMasMenor));
 		botonMasMenor.click();
 		Thread.sleep(1000);
 		edadMenor.sendKeys(Keys.ARROW_DOWN);
 		Thread.sleep(100);
 		edadMenor.sendKeys(Keys.ENTER);
 		//Boton Aplicar
-		//wait.until(ExpectedConditions.elementToBeClickable(btnAplicar));
+		wait.until(ExpectedConditions.elementToBeClickable(btnAplicar));
 		btnAplicar.click();
 	}
 	
