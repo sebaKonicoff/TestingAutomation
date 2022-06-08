@@ -53,6 +53,7 @@
     	<groupId>org.apache.maven.plugins</groupId>
     	<artifactId>maven-surefire-plugin</artifactId>
     	<version>3.0.0-M5</version>
+    	
 	</dependency>
 	
   </dependencies>
@@ -72,7 +73,7 @@
 		<version>2.12</version>
 		<configuration>
 		<suiteXmlFiles>
-		<suiteXmlFile>src/test/java/suites/testng.xml</suiteXmlFile>
+		<suiteXmlFile>src/test/java/suites/${suite}</suiteXmlFile>
 		</suiteXmlFiles>
 		</configuration>
 	</plugin>

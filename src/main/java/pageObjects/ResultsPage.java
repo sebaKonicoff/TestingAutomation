@@ -27,6 +27,8 @@ public class ResultsPage {
 		driver.close();
 		driver.quit();
 	}
+	
+	
 	public void resultado()
 	{
 		wait.until(ExpectedConditions.elementToBeClickable(resultadoBusqueda));

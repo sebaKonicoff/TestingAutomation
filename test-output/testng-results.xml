@@ -2,15 +2,30 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-08T08:09:29 ART" name="Default suite" finished-at="2022-06-08T08:09:43 ART" duration-ms="13672">
+  <suite started-at="2022-06-08T09:11:35 ART" name="Default suite" finished-at="2022-06-08T09:11:49 ART" duration-ms="13708">
     <groups>
     </groups>
-    <test started-at="2022-06-08T08:09:29 ART" name="Default test" finished-at="2022-06-08T08:09:43 ART" duration-ms="13672">
+    <test started-at="2022-06-08T09:11:35 ART" name="Default test" finished-at="2022-06-08T09:11:49 ART" duration-ms="13708">
       <class name="proyectoAutomation.proyectoAutomation.Despegar">
-        <test-method signature="validarBusqueda()[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@2667f029]" started-at="2022-06-08T08:09:29 ART" name="validarBusqueda" description="Validar busqueda en pagina Despegar" finished-at="2022-06-08T08:09:43 ART" duration-ms="13653" status="PASS">
+        <test-method is-config="true" signature="initTest(org.testng.ITestContext)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@c267ef4]" started-at="2022-06-08T09:11:36 ART" name="initTest" finished-at="2022-06-08T09:11:36 ART" duration-ms="959" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@678040b3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method signature="validarBusqueda()[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@c267ef4]" started-at="2022-06-08T09:11:36 ART" name="validarBusqueda" description="Validar busqueda en pagina Despegar" finished-at="2022-06-08T09:11:45 ART" duration-ms="8589" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validarBusqueda -->
+        <test-method is-config="true" signature="cerrar()[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@c267ef4]" started-at="2022-06-08T09:11:45 ART" name="cerrar" finished-at="2022-06-08T09:11:49 ART" duration-ms="4139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cerrar -->
       </class> <!-- proyectoAutomation.proyectoAutomation.Despegar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

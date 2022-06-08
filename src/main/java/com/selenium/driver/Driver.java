@@ -11,7 +11,7 @@ public class Driver {
 		driver.get("https://www.despegar.com.ar/");
 	}
 	
-	public static WebDriver LevatnarBrowser(String browserName, String url)
+	public static WebDriver LevatnarBrowser(String browserName)
 	{
 		browserName.toLowerCase();
 		WebDriver driver = null;
