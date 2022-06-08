@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-06T09:27:10 ART" name="Default suite" finished-at="2022-06-06T09:27:25 ART" duration-ms="14906">
+  <suite started-at="2022-06-08T08:09:29 ART" name="Default suite" finished-at="2022-06-08T08:09:43 ART" duration-ms="13672">
     <groups>
     </groups>
-    <test started-at="2022-06-06T09:27:10 ART" name="Default test" finished-at="2022-06-06T09:27:25 ART" duration-ms="14906">
+    <test started-at="2022-06-08T08:09:29 ART" name="Default test" finished-at="2022-06-08T08:09:43 ART" duration-ms="13672">
       <class name="proyectoAutomation.proyectoAutomation.Despegar">
-        <test-method signature="validarBusqueda()[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@2667f029]" started-at="2022-06-06T09:27:10 ART" name="validarBusqueda" description="Validar busqueda en pagina Despegar" finished-at="2022-06-06T09:27:25 ART" duration-ms="14887" status="PASS">
+        <test-method signature="validarBusqueda()[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@2667f029]" started-at="2022-06-08T08:09:29 ART" name="validarBusqueda" description="Validar busqueda en pagina Despegar" finished-at="2022-06-08T08:09:43 ART" duration-ms="13653" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validarBusqueda -->

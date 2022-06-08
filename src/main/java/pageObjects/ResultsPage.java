@@ -22,12 +22,15 @@ public class ResultsPage {
 		this.wait = new WebDriverWait(driver,5);
 	}
 	
+	public void cerrar()
+	{
+		driver.close();
+		driver.quit();
+	}
 	public void resultado()
 	{
 		wait.until(ExpectedConditions.elementToBeClickable(resultadoBusqueda));
-		Assert.assertTrue(resultadoBusqueda.isDisplayed(), "No hay reserva");
-		driver.close();
-		driver.quit();
+		Assert.assertTrue(resultadoBusqueda.isDisplayed(), "No hay reserva");		
 	}
 
 }

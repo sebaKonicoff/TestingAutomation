@@ -78,16 +78,16 @@ public class DespegarAlojamientosPage {
 	{
 		wait.until(ExpectedConditions.elementToBeClickable(habitacion));
 		habitacion.click();
-		Thread.sleep(100);
+		//Thread.sleep(100);
 		wait.until(ExpectedConditions.elementToBeClickable(botonMasAdulto));
-		botonMasAdulto.click();
+		//botonMasAdulto.click();
 		Thread.sleep(100);
 		//busqueda para seleccionar un menor.
 		wait.until(ExpectedConditions.elementToBeClickable(botonMasMenor));
 		botonMasMenor.click();
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		edadMenor.sendKeys(Keys.ARROW_DOWN);
-		Thread.sleep(100);
+		//Thread.sleep(100);
 		edadMenor.sendKeys(Keys.ENTER);
 		//Boton Aplicar
 		wait.until(ExpectedConditions.elementToBeClickable(btnAplicar));

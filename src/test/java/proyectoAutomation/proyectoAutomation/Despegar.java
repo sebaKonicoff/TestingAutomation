@@ -19,8 +19,8 @@ public class Despegar extends Driver{
 		//wait = new WebDriverWait(driver,5);
 		Driver.goToMainPage(driver);
 		DespegarHomePage homePage = new DespegarHomePage(driver);
-		DespegarAlojamientosPage alojamientoPage = new DespegarAlojamientosPage(driver);
-		alojamientoPage = homePage.buscarAlojamiento();
+		DespegarAlojamientosPage alojamientoPage = homePage.buscarAlojamiento();
+		//alojamientoPage = homePage.buscarAlojamiento();
 		alojamientoPage.ingresarCiudadDestino("Córdoba");
 		alojamientoPage.ingresarFechaIngreso();
 		alojamientoPage.ingresarFechaSalida();
@@ -28,5 +28,6 @@ public class Despegar extends Driver{
 		ResultsPage resultsPage = new ResultsPage(driver);
 		resultsPage = alojamientoPage.buscarReserva();
 		resultsPage.resultado();
+		resultsPage.cerrar();
 	}
 }
