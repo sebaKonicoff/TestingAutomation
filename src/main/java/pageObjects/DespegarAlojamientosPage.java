@@ -1,9 +1,13 @@
 package pageObjects;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -11,6 +15,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class DespegarAlojamientosPage {
 	private WebDriver driver = null;
 	WebDriverWait wait = null;
+	List<WebElement> listaElementos;
+	WebElement edadMenor,valueElemento;
 	
 	@FindBy(xpath="//*[@class='input-container']//*[@type='text'][@placeholder='Ingresá una ciudad, alojamiento o punto de interés']")
 	WebElement destino;
@@ -31,7 +37,11 @@ public class DespegarAlojamientosPage {
 	@FindBy(xpath="//*[@class='stepper__room']//*[@class='stepper__room__row'][2]//*[@class='steppers-icon-right stepper__icon']")
 	WebElement botonMasMenor;
 	@FindBy(xpath="//*[@class='select-container']//*[@class='select']")
-	WebElement edadMenor;
+	WebElement btnEdadMenor;
+	@FindBys( {
+		   @FindBy(xpath = "//select[@class='select']//option[@class='select-option']")
+		} )
+		private List<WebElement> edadesMenores;
 	@FindBy(xpath="//*[@class='distribution__container distribution__type__rooms']//*[@class='stepper__room__footer ']//*[@class='sbox5-3-btn -md -primary']")
 	WebElement btnAplicar;
 	@FindBy(xpath="//*[@class='sbox5-box-content']//*[@type='button']")
@@ -86,9 +96,10 @@ public class DespegarAlojamientosPage {
 		wait.until(ExpectedConditions.elementToBeClickable(botonMasMenor));
 		botonMasMenor.click();
 		//Thread.sleep(1000);
-		edadMenor.sendKeys(Keys.ARROW_DOWN);
-		//Thread.sleep(100);
-		edadMenor.sendKeys(Keys.ENTER);
+		btnEdadMenor.click();
+		Thread.sleep(1000);
+		ciclarLista(10);
+		//edadMenor.click();
 		//Boton Aplicar
 		wait.until(ExpectedConditions.elementToBeClickable(btnAplicar));
 		btnAplicar.click();
@@ -99,5 +110,10 @@ public class DespegarAlojamientosPage {
 		//wait.until(ExpectedConditions.elementToBeClickable(btnBuscar));
 		btnBuscar.click();
 		return new ResultsPage(this.driver);
+	}
+	
+	public void ciclarLista(int edad) {		
+		wait.until(ExpectedConditions.visibilityOfAllElements(edadesMenores));
+		edadesMenores.get(edad).click();
 	}
 }
