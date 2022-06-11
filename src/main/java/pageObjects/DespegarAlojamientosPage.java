@@ -90,7 +90,7 @@ public class DespegarAlojamientosPage {
 		habitacion.click();
 		//Thread.sleep(100);
 		wait.until(ExpectedConditions.elementToBeClickable(botonMasAdulto));
-		//botonMasAdulto.click();
+		botonMasAdulto.click();
 		Thread.sleep(100);
 		//busqueda para seleccionar un menor.
 		wait.until(ExpectedConditions.elementToBeClickable(botonMasMenor));

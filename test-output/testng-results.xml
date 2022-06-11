@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-11T19:00:48 ART" name="Default suite" finished-at="2022-06-11T19:01:31 ART" duration-ms="43265">
+  <suite started-at="2022-06-11T19:04:00 ART" name="Default suite" finished-at="2022-06-11T19:04:15 ART" duration-ms="14978">
     <groups>
     </groups>
-    <test started-at="2022-06-11T19:00:48 ART" name="Default test" finished-at="2022-06-11T19:01:31 ART" duration-ms="43265">
+    <test started-at="2022-06-11T19:04:00 ART" name="Default test" finished-at="2022-06-11T19:04:15 ART" duration-ms="14978">
       <class name="proyectoAutomation.proyectoAutomation.Despegar">
-        <test-method is-config="true" signature="initTest(org.testng.ITestContext)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@3911c2a7]" started-at="2022-06-11T19:00:48 ART" name="initTest" finished-at="2022-06-11T19:00:49 ART" duration-ms="962" status="PASS">
+        <test-method is-config="true" signature="initTest(org.testng.ITestContext)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@3911c2a7]" started-at="2022-06-11T19:04:00 ART" name="initTest" finished-at="2022-06-11T19:04:02 ART" duration-ms="1195" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6b350309]]>
+                <![CDATA[org.testng.TestRunner@58f174d9]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method signature="validarBusqueda(java.lang.String)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@3911c2a7]" started-at="2022-06-11T19:00:49 ART" name="validarBusqueda" description="Validar busqueda en pagina Despegar" data-provider="ciudades" finished-at="2022-06-11T19:00:59 ART" duration-ms="9375" status="PASS">
+        <test-method signature="validarBusqueda(java.lang.String)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@3911c2a7]" started-at="2022-06-11T19:04:02 ART" name="validarBusqueda" description="Validar busqueda en pagina Despegar" data-provider="ciudades" finished-at="2022-06-11T19:04:11 ART" duration-ms="9634" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,59 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validarBusqueda -->
-        <test-method is-config="true" signature="cerrar()[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@3911c2a7]" started-at="2022-06-11T19:00:59 ART" name="cerrar" finished-at="2022-06-11T19:01:03 ART" duration-ms="4165" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cerrar -->
-        <test-method is-config="true" signature="initTest(org.testng.ITestContext)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@3911c2a7]" started-at="2022-06-11T19:01:03 ART" name="initTest" finished-at="2022-06-11T19:01:03 ART" duration-ms="686" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@6b350309]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initTest -->
-        <test-method signature="validarBusqueda(java.lang.String)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@3911c2a7]" started-at="2022-06-11T19:01:03 ART" name="validarBusqueda" description="Validar busqueda en pagina Despegar" data-provider="ciudades" finished-at="2022-06-11T19:01:13 ART" duration-ms="9172" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mendoza]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validarBusqueda -->
-        <test-method is-config="true" signature="cerrar()[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@3911c2a7]" started-at="2022-06-11T19:01:13 ART" name="cerrar" finished-at="2022-06-11T19:01:17 ART" duration-ms="4149" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cerrar -->
-        <test-method is-config="true" signature="initTest(org.testng.ITestContext)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@3911c2a7]" started-at="2022-06-11T19:01:17 ART" name="initTest" finished-at="2022-06-11T19:01:17 ART" duration-ms="622" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@6b350309]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initTest -->
-        <test-method signature="validarBusqueda(java.lang.String)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@3911c2a7]" started-at="2022-06-11T19:01:17 ART" name="validarBusqueda" description="Validar busqueda en pagina Despegar" data-provider="ciudades" finished-at="2022-06-11T19:01:27 ART" duration-ms="9971" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[San Juan]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validarBusqueda -->
-        <test-method is-config="true" signature="cerrar()[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@3911c2a7]" started-at="2022-06-11T19:01:27 ART" name="cerrar" finished-at="2022-06-11T19:01:31 ART" duration-ms="4135" status="PASS">
+        <test-method is-config="true" signature="cerrar()[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@3911c2a7]" started-at="2022-06-11T19:04:11 ART" name="cerrar" finished-at="2022-06-11T19:04:15 ART" duration-ms="4125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cerrar -->
