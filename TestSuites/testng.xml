@@ -3,6 +3,12 @@
 <suite name="Suite">
 <parameter name="Navegador" value="chrome"></parameter>
   <test thread-count="5" name="Test">
+  	<groups>
+  		<run>
+  			<include name="grupoMenor9"></include>
+  			<include name="grupoMenor15"></include>
+  		</run>
+  	</groups>
     <classes>
       <class name="ActividadDespegar.ActividadDespegar"/>
     </classes>

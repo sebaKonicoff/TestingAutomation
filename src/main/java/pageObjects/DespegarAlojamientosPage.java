@@ -84,7 +84,7 @@ public class DespegarAlojamientosPage {
 		fechaSalida.click();
 	}
 	
-	public void seleccionarPasajero() throws InterruptedException
+	public void seleccionarPasajero(int edadMenor) throws InterruptedException
 	{
 		wait.until(ExpectedConditions.elementToBeClickable(habitacion));
 		habitacion.click();
@@ -98,7 +98,7 @@ public class DespegarAlojamientosPage {
 		//Thread.sleep(1000);
 		btnEdadMenor.click();
 		Thread.sleep(1000);
-		ciclarLista(10);
+		ciclarLista(edadMenor);
 		//edadMenor.click();
 		//Boton Aplicar
 		wait.until(ExpectedConditions.elementToBeClickable(btnAplicar));

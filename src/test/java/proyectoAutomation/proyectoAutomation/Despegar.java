@@ -19,7 +19,7 @@ public class Despegar extends Driver{
 	WebDriverWait wait;
 	WebDriver driver;
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void initTest(ITestContext context)
 	{
 		String navegadorSuite = context.getCurrentXmlTest().getParameter("Navegador");
@@ -33,34 +33,37 @@ public class Despegar extends Driver{
 	@DataProvider(name = "ciudades")
 	public Object[][] ciudadesProvider()
 	{
-		return new Object[][] {{"Córdoba"},{"Mendoza"},{"San Juan"}};
+		return new Object[][] {{"Córdoba"},{"Mendoza"}};//,{"San Juan"}};
 	}
 	
-	/*@DataProvider(name = "edadesMenor")
-	public Object[][] edadesProvider()
-	{
-		return new Object[][] {{10},{12},{15}};
-	}
-	*/
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void cerrar()
 	{
 		driver.close();
 	}
 	
-	@Test(description = "Validar busqueda en pagina Despegar", dataProvider="ciudades")
+	@Test(groups = {"grupoMenor9"}, description = "Validar busqueda en pagina Despegar con menor de 10 años", dataProvider="ciudades")
 	public void validarBusqueda(String ciudades) throws InterruptedException
 	{
-		//wait = new WebDriverWait(driver,5);
+		despegar(ciudades,10);
+	}
+	@Test(groups = {"grupoMenor15"}, description = "Validar busqueda en pagina Despegar con menor de 15 años", dataProvider="ciudades")
+	public void validarBusqueda2(String ciudades) throws InterruptedException
+	{
+		despegar(ciudades,16);		
+	}	
+	
+	public void despegar(String ciudades, int edad) throws InterruptedException
+	{
 		Driver.goToMainPage(driver);
 		DespegarHomePage homePage = new DespegarHomePage(driver);
 		DespegarAlojamientosPage alojamientoPage = homePage.buscarAlojamiento();
 		alojamientoPage.ingresarCiudadDestino(ciudades);
 		alojamientoPage.ingresarFechaIngreso();
 		alojamientoPage.ingresarFechaSalida();
-		alojamientoPage.seleccionarPasajero();
+		alojamientoPage.seleccionarPasajero(edad);
 		ResultsPage resultsPage = new ResultsPage(driver);
 		resultsPage = alojamientoPage.buscarReserva();
 		resultsPage.resultado();
-	}	
+	}
 }
