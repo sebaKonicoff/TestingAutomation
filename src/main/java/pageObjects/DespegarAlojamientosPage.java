@@ -107,6 +107,7 @@ public class DespegarAlojamientosPage {
 	
 	public void seleccionarDia(int dia)
 	{
+		wait.until(ExpectedConditions.visibilityOf(fecha.get(dia)));
 		fecha.get(dia).click();
 	}
 	
