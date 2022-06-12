@@ -6,7 +6,7 @@
       <class name="proyectoAutomation.proyectoAutomation.Despegar">
         <methods>
           <include name="initTest"/>
-          <include name="cerrar"/>
+          <include name="validarBusqueda2" invocation-numbers="0"/>
           <include name="validarBusqueda" invocation-numbers="0"/>
         </methods>
       </class> <!-- proyectoAutomation.proyectoAutomation.Despegar -->

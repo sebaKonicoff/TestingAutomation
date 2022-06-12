@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-11T19:39:53 ART" name="Default suite" finished-at="2022-06-11T19:40:52 ART" duration-ms="58270">
+  <suite started-at="2022-06-12T12:11:11 ART" name="Default suite" finished-at="2022-06-12T12:11:40 ART" duration-ms="28961">
     <groups>
       <group name="grupoMenor15">
         <method signature="Despegar.validarBusqueda2(java.lang.String)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@4facf68f]" name="validarBusqueda2" class="proyectoAutomation.proyectoAutomation.Despegar"/>
       </group> <!-- grupoMenor15 -->
-      <group name="grupoMenor9">
+      <group name="grupoMenor10">
         <method signature="Despegar.validarBusqueda(java.lang.String)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@4facf68f]" name="validarBusqueda" class="proyectoAutomation.proyectoAutomation.Despegar"/>
-      </group> <!-- grupoMenor9 -->
+      </group> <!-- grupoMenor10 -->
     </groups>
-    <test started-at="2022-06-11T19:39:53 ART" name="Default test" finished-at="2022-06-11T19:40:52 ART" duration-ms="58270">
+    <test started-at="2022-06-12T12:11:11 ART" name="Default test" finished-at="2022-06-12T12:11:40 ART" duration-ms="28961">
       <class name="proyectoAutomation.proyectoAutomation.Despegar">
-        <test-method is-config="true" signature="initTest(org.testng.ITestContext)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@4facf68f]" started-at="2022-06-11T19:39:53 ART" name="initTest" finished-at="2022-06-11T19:39:54 ART" duration-ms="893" status="PASS">
+        <test-method is-config="true" signature="initTest(org.testng.ITestContext)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@4facf68f]" started-at="2022-06-12T12:11:11 ART" name="initTest" finished-at="2022-06-12T12:11:12 ART" duration-ms="951" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6a9344f5]]>
+                <![CDATA[org.testng.TestRunner@474fae39]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method signature="validarBusqueda(java.lang.String)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@4facf68f]" started-at="2022-06-11T19:39:54 ART" name="validarBusqueda" description="Validar busqueda en pagina Despegar con menor de 10 años" data-provider="ciudades" finished-at="2022-06-11T19:40:05 ART" duration-ms="10582" status="PASS">
+        <test-method signature="validarBusqueda(java.lang.String)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@4facf68f]" started-at="2022-06-12T12:11:12 ART" name="validarBusqueda" description="Validar busqueda en pagina Despegar con menor de 10 años" data-provider="ciudades" finished-at="2022-06-12T12:11:21 ART" duration-ms="8996" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,48 +35,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validarBusqueda -->
-        <test-method is-config="true" signature="cerrar()[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@4facf68f]" started-at="2022-06-11T19:40:05 ART" name="cerrar" finished-at="2022-06-11T19:40:09 ART" duration-ms="4158" status="PASS">
+        <test-method is-config="true" signature="cerrar()[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@4facf68f]" started-at="2022-06-12T12:11:21 ART" name="cerrar" finished-at="2022-06-12T12:11:26 ART" duration-ms="4144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cerrar -->
-        <test-method is-config="true" signature="initTest(org.testng.ITestContext)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@4facf68f]" started-at="2022-06-11T19:40:09 ART" name="initTest" finished-at="2022-06-11T19:40:10 ART" duration-ms="702" status="PASS">
+        <test-method is-config="true" signature="initTest(org.testng.ITestContext)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@4facf68f]" started-at="2022-06-12T12:11:26 ART" name="initTest" finished-at="2022-06-12T12:11:26 ART" duration-ms="671" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6a9344f5]]>
+                <![CDATA[org.testng.TestRunner@474fae39]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method signature="validarBusqueda(java.lang.String)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@4facf68f]" started-at="2022-06-11T19:40:10 ART" name="validarBusqueda" description="Validar busqueda en pagina Despegar con menor de 10 años" data-provider="ciudades" finished-at="2022-06-11T19:40:19 ART" duration-ms="9420" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mendoza]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validarBusqueda -->
-        <test-method is-config="true" signature="cerrar()[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@4facf68f]" started-at="2022-06-11T19:40:19 ART" name="cerrar" finished-at="2022-06-11T19:40:23 ART" duration-ms="4160" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cerrar -->
-        <test-method is-config="true" signature="initTest(org.testng.ITestContext)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@4facf68f]" started-at="2022-06-11T19:40:23 ART" name="initTest" finished-at="2022-06-11T19:40:24 ART" duration-ms="637" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@6a9344f5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initTest -->
-        <test-method signature="validarBusqueda2(java.lang.String)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@4facf68f]" started-at="2022-06-11T19:40:24 ART" name="validarBusqueda2" description="Validar busqueda en pagina Despegar con menor de 15 años" data-provider="ciudades" finished-at="2022-06-11T19:40:33 ART" duration-ms="9291" status="PASS">
+        <test-method signature="validarBusqueda2(java.lang.String)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@4facf68f]" started-at="2022-06-12T12:11:26 ART" name="validarBusqueda2" description="Validar busqueda en pagina Despegar con menor de 15 años" data-provider="ciudades" finished-at="2022-06-12T12:11:36 ART" duration-ms="10015" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,33 +61,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validarBusqueda2 -->
-        <test-method is-config="true" signature="cerrar()[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@4facf68f]" started-at="2022-06-11T19:40:33 ART" name="cerrar" finished-at="2022-06-11T19:40:37 ART" duration-ms="4152" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cerrar -->
-        <test-method is-config="true" signature="initTest(org.testng.ITestContext)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@4facf68f]" started-at="2022-06-11T19:40:37 ART" name="initTest" finished-at="2022-06-11T19:40:38 ART" duration-ms="636" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@6a9344f5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initTest -->
-        <test-method signature="validarBusqueda2(java.lang.String)[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@4facf68f]" started-at="2022-06-11T19:40:38 ART" name="validarBusqueda2" description="Validar busqueda en pagina Despegar con menor de 15 años" data-provider="ciudades" finished-at="2022-06-11T19:40:47 ART" duration-ms="9469" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mendoza]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validarBusqueda2 -->
-        <test-method is-config="true" signature="cerrar()[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@4facf68f]" started-at="2022-06-11T19:40:47 ART" name="cerrar" finished-at="2022-06-11T19:40:52 ART" duration-ms="4147" status="PASS">
+        <test-method is-config="true" signature="cerrar()[pri:0, instance:proyectoAutomation.proyectoAutomation.Despegar@4facf68f]" started-at="2022-06-12T12:11:36 ART" name="cerrar" finished-at="2022-06-12T12:11:40 ART" duration-ms="4160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cerrar -->

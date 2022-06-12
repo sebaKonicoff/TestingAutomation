@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class DespegarHomePage {
 	
-	@FindBy(xpath="//*[@class='shifu-3-button-circle HOTELS paint-circle ']")
+	@FindBy(css="a.shifu-3-button-circle.HOTELS.paint-circle ")
 	WebElement alojamiento;
 	
 	private WebDriver driver = null;

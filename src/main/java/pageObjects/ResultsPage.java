@@ -12,7 +12,7 @@ public class ResultsPage {
 	private WebDriver driver = null;
 	WebDriverWait wait = null;
 	
-	@FindBy(xpath="//*[@class='eva-3-results-list -banner-top']//*[@class='results-wrapper -eva-3-mt-xlg']")
+	@FindBy(css="div.eva-3-results-list.-banner-top div.results-cluster-container")
 	WebElement resultadoBusqueda;
 
 	public ResultsPage(WebDriver driver)

@@ -25,15 +25,13 @@ public class Despegar extends Driver{
 		String navegadorSuite = context.getCurrentXmlTest().getParameter("Navegador");
 		String navegador = navegadorSuite != null ? navegadorSuite : "chrome";
 		
-		//String url = "https://www.despegar.com.ar/";
-		
 		driver = Driver.LevatnarBrowser(navegador);
 	}
 	
 	@DataProvider(name = "ciudades")
 	public Object[][] ciudadesProvider()
 	{
-		return new Object[][] {{"Córdoba"},{"Mendoza"}};//,{"San Juan"}};
+		return new Object[][] {{"Córdoba"}};//,{"Mendoza"}};//,{"San Juan"}};
 	}
 	
 	@AfterMethod(alwaysRun=true)
@@ -42,11 +40,12 @@ public class Despegar extends Driver{
 		driver.close();
 	}
 	
-	@Test(groups = {"grupoMenor9"}, description = "Validar busqueda en pagina Despegar con menor de 10 años", dataProvider="ciudades")
+	@Test(groups = {"grupoMenor10"}, description = "Validar busqueda en pagina Despegar con menor de 10 años", dataProvider="ciudades")
 	public void validarBusqueda(String ciudades) throws InterruptedException
 	{
-		despegar(ciudades,10);
+		despegar(ciudades,11);
 	}
+	
 	@Test(groups = {"grupoMenor15"}, description = "Validar busqueda en pagina Despegar con menor de 15 años", dataProvider="ciudades")
 	public void validarBusqueda2(String ciudades) throws InterruptedException
 	{
