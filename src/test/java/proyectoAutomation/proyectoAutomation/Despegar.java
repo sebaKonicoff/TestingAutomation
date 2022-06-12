@@ -40,13 +40,13 @@ public class Despegar extends Driver{
 		driver.close();
 	}
 	
-	@Test(groups = {"grupoMenor10"}, description = "Validar busqueda en pagina Despegar con menor de 10 años", dataProvider="ciudades")
+	@Test(groups = {"grupoMenor10"}, description = "Validar busqueda en pagina Despegar con menor de 10 años, del 24 al 27 de Junio", dataProvider="ciudades")
 	public void validarBusqueda(String ciudades) throws InterruptedException
 	{
 		despegar(ciudades,11);
 	}
 	
-	@Test(groups = {"grupoMenor15"}, description = "Validar busqueda en pagina Despegar con menor de 15 años", dataProvider="ciudades")
+	@Test(groups = {"grupoMenor15"}, description = "Validar busqueda en pagina Despegar con menor de 15 años, del 24 al 27 de Junio", dataProvider="ciudades")
 	public void validarBusqueda2(String ciudades) throws InterruptedException
 	{
 		despegar(ciudades,16);		
